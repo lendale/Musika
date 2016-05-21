@@ -18,6 +18,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    buildTypes.each {
+        it.buildConfigField "String", "LAST_FM_API_KEY", '"dece00f28d8ec006e9225a29528a5101"'
+    }
 }
 
 dependencies {
